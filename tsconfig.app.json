@@ -1,5 +1,5 @@
 {
-
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*.vue", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
@@ -10,6 +10,10 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+
+    // JSX support for vue-toastification types
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
 
     // `vue-tsc --build` produces a .tsbuildinfo file for incremental type-checking.
     // Specified here to keep it out of the root directory.
