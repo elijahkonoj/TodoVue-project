@@ -20,7 +20,7 @@ const emit = defineEmits<{
 <template>
   <li style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 0.5rem; border-radius: 5px;">
     <div>
-      <strong>{{ task.name }}</strong>
+      <strong style='color: red'>{{ task.name }}</strong>
       <p>{{ task.description }}</p>
     </div>
 
